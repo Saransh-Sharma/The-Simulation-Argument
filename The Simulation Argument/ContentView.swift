@@ -30,6 +30,8 @@ struct ContentView: View {
                 .font(.largeTitle)
             .background(Rectangle().fill(Color.black))
             
+            Divider()
+            
                     Text(premiseTitle)
                         .bold().multilineTextAlignment(.leading)
                             .font(.headline)
@@ -37,10 +39,11 @@ struct ContentView: View {
              Text(premiseBody).foregroundColor(.black)
                           .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom)).font(.body)
             
+            Divider()
                 Text(conclusionTitle).bold()
             
             Text(conclusionBody).foregroundColor(.black)
-                          .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom)).font(.body)
+                          .background(LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottom)).font(.body)
         }
        
     }
