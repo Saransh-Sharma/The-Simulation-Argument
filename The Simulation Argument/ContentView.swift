@@ -9,9 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    let argumentBody = "An Introduction to the simulation argument:"
     var body: some View {
-        Text("Hello, World!")
+        Text(argumentBody)
+        .foregroundColor(Color.red)
+            .bold().underline(true, color: Color.black)
     }
+    
+   
 }
 
 struct ContentView_Previews: PreviewProvider {
